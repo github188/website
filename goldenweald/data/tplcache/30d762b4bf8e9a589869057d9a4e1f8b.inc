@@ -1,0 +1,1 @@
+<a href="[field:typelink/]"  title="[field:typename/]"><img src="/skin/images/video_en.png" alt="" /></a>

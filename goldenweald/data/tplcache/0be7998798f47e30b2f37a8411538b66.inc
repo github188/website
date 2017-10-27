@@ -1,0 +1,1 @@
+<p style="padding-top: 20px;width: 130px;font-size: 24px;padding-left: 6px;">{dede:channel type='son' noself='yes' }<a href="[field:typelink/]" style="color: #ffffff;">[field:typename/]</a>{/dede:channel}</p>

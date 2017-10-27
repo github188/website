@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="author" content="order by mubanzhijia.com" />
+<meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″>
+<link  type="text/css" rel="stylesheet" href="/skin/images/style.css" />
+<script src="/skin/images/jquery.js" language="javascript" ></script>
+<script language="javascript" src="/skin/images/lrtk.js"></script>
+<script src="/skin/images/jcarousellite.js" language="javascript" ></script>
+<script language="javascript" src="/skin/images/slide.js"></script>
+<meta http-equiv="mobile-agent" content="format=xhtml;url={dede:global.cfg_mobileurl/}/index.php">
+<script type="text/javascript">if(window.location.toString().indexOf('pref=padindex') != -1){}else{if(/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))){if(window.location.href.indexOf("?mobile")<0){try{if(/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){window.location.href="{dede:global.cfg_mobileurl/}/index.php";}else if(/iPad/i.test(navigator.userAgent)){}else{}}catch(e){}}}}</script>
+<script language="javascript"></script>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="cpzx">
+  <div class="cpzx_t">
+  	{dede:type typeid=1}
+  	<p>
+  	<a href="[field:typelink/]"  title="[field:typename/]"><img src="/skin/images/rc_01.jpg" style="padding-right: 80px;" /></a>
+  	</p>
+  	{/dede:type}
+  </div>
+
+  <div class="cpcon">
+      <ul>
+        {dede:arclist typeid=1,31,32,34,35,36,37,38,39 row=8}
+        <li> <a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]" width="255" height="255"/></a>
+          <p><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></p>
+        </li>
+        {/dede:arclist}
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="gywm">
+  <div class="gywm_c">
+    <div class="gsjj"> {dede:sql sql='Select content from dede_arctype where id=6'}[field:content function='cn_substr(html2text(@me),950)'/]{/dede:sql}.... </div>
+    <div class="gywm_b"> <a href="{dede:type typeid=6}[field:typelink /]{/dede:type}"  title="公司简介"><img src="/skin/images/rc_09.jpg" width="133" height="34" alt="公司简介" /></a> {dede:type typeid=5}<a href="[field:typelink/]"  title="[field:typename/]"><img src="/skin/images/rc_10.jpg" width="133" height="34" alt="[field:typename/]" /></a>{/dede:type} </div>
+  <div class="gywm_p cssimg"><img src="/skin/images/rc_07.jpg" width="427" height="354" alt="公司简介" /></div>
+  </div>
+</div>
+<div class="khjz">
+  <div class="khjz_t">{dede:type typeid=3}<a href="[field:typelink/]"  title="[field:typename/]"><img src="/skin/images/rc_19.png" width="308" height="56" alt="[field:typename/]" /></a>{/dede:type}</div>
+  <ul>
+    {dede:arclist row=4 typeid=3,40,42,43,44 titlelen='60'}
+    <li>
+      <div class="khjz_m cssimg"><a href="[field:arcurl/]" title="[field:title/]"><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]" width="191" height="145"/></a></div>
+      <div class="khjz_r">
+        <div class="jz_rt">
+          <p><a href="[field:arcurl/]" title="[field:title/]">[field:title/]</a></p>
+          <span>[field:pubdate function="MyDate('Y-m-d',@me)"/]</span></div>
+        <div class="jz_rp">[field:description function="cn_substr(@me,160)"/]....</div>
+        <div class="jz_rb"><a href="[field:arcurl/]" title="[field:title/]"><img src="/skin/images/rc_24.jpg" width="70" height="16" alt="" /></a></div>
+      </div>
+    </li>
+    {/dede:arclist}
+  </ul>
+</div>
+<div class="jdal">
+  <div id="box_Pro_sub1">
+  	<p style="text-align: center;"><img src="/skin/images/video.png" alt="" /></p>
+  </div>
+  <div class="jdal_c cssimg">
+    <ul>
+      <li> 
+<iframe height="300px" width="100%" src="http://player.youku.com/embed/XMzA5Njc5NDU3Ng==" frameborder="0" 'allowfullscreen'="">
+</iframe>
+        <p>PCB Probe Test</p>
+     </li>
+     <li>
+<iframe height="300px" width="100%" src="http://player.youku.com/embed/XMzA5Njc5NjU2NA==" frameborder="0" 'allowfullscreen'="">
+</iframe>
+        <p>SMT Workshop</p>
+     </li>
+               <li>
+<iframe height="300px" width="100%" src="http://player.youku.com/embed/XMzEwMTQ1NzU0MA==" frameborder="0" 'allowfullscreen'="">
+</iframe>
+        <p>CNC PCB Outline- PCBA</p>
+     </li>
+    </ul>
+  </div>
+</div>
+<div class="lxwm">
+  <div class="lxwm_l">
+    <p> 服务热线：{dede:global.cfg_dh/}<br />
+      手机：{dede:global.cfg_sj/}<br />
+      E-mail: {dede:global.cfg_shoujianren/} <br />
+      skype:  Gamin_Wjj<br />
+      公司地址：{dede:global.cfg_dz/}<br />
+    </p>
+  </div>
+  <div class="lxwm_r">
+    <form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+    	<input type="hidden" name="required" value="name,email,neirong" />
+      <input type="hidden" name="action" value="post" />
+      <input type="hidden" name="diyid" value="1" />
+      <input type="hidden" name="do" value="2" />
+      <p><span style="color: red;">*</span> 姓名：</p>
+      <input name="name" type="text" class="lys1" value="" />
+      <p>电话：</p>
+      <input name="tel" type="text" class="lys1" value="" />
+      <p><span style="color: red;">*</span> 邮箱：</p>
+      <input name="email" type="text" class="lys1" value="" />
+      <p><span style="color: red;">*</span> 留言内容：</p>
+      <textarea name="neirong" cols="" rows=""  class="lys3"></textarea>
+      <input name="" class="lyb1" type="submit" value="立即提交" />
+      <input type="hidden" name="dede_fields" value="name,text;tel,text;neirong,multitext;email,text" />
+      <input type="hidden" name="dede_fieldshash" value="79ab86229a5c0e82f8fd99be8d8fd655" />
+    </form>
+  </div>
+</div>
+<div class="hzkh">
+  <div class="hzkh_t"><img src="/skin/images/links.png" alt="FRIENDLY LINKS" /></div>
+  <div class="hzkh_c cssimg">
+    <ul>
+      <li><a href="https://goldenweald.en.alibaba.com/?spm=a2700.8304367.topnav.1.5a55bd35BQH3W4" title="Alibaba" target="_blank"><img src="/skin/images/alibaba.jpg"  alt="Alibaba" title="Alibaba" width="180" height="70"/></a></li>
+	<li><a href="http://www.globalsources.com" title="globalsources" target="_blank"><img src="/skin/images/GSLOGO.jpg"  alt="globalsources" title="globalsources" width="180" height="70"/></a></li>
+	<li><a href="https://www.digikey.com" title="digikey" target="_blank"><img src="/skin/images/digikeylogo.jpg"  alt="digikey" title="digikey" width="180" height="70"/></a></li>
+	<li><a href="http://www.mouser.com" title="mouser" target="_blank"><img src="/skin/images/mouser-reg-logo-trim.jpg"  alt="mouser" title="mouser" width="180" height="70"/></a></li>
+	<li><a href="http://cn.element14.com" title="element14" target="_blank"><img src="/skin/images/element14.jpg"  alt="element14" title="element14" width="180" height="70"/></a></li>
+	<li><a href="http://www.alldatasheet.com" title="alldatasheet" target="_blank"><img src="/skin/images/alldatasheet_title_s.jpg"  alt="alldatasheet" title="alldatasheet" width="180" height="70"/></a></li>
+    </ul>
+  </div>
+</div>
+{dede:include filename="footer.htm"/}
+</body>
+</html>

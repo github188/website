@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description function='html2text(@me)'/}" />
+<meta name=”viewport” content=”width=device-width, initial-scale=1, maximum-scale=1″>
+<link  type="text/css" rel="stylesheet" href="/skin/images/style.css" />
+<link  type="text/css" rel="stylesheet" href="/skin/images/nei.css" />
+<script src="/skin/images/jquery.js" language="javascript" ></script>
+<script language="javascript" src="/skin/images/lrtk.js"></script>
+<script src="/skin/images/jcarousellite.js" language="javascript" ></script>
+<script language="javascript" src="/skin/images/tab.js"></script>
+<script language="javascript" src="/skin/images/slide.js"></script>
+</head>
+<body>
+{dede:include filename="en_head_new.htm" /}
+<div class="main" > {dede:include filename="en_left.htm"/}
+  <div class="main_right">
+  	    <div class="sitemap">
+  	    	<div class="itemap_left"><a href="{dede:type row=1}[field:typelink /]{/dede:type}" style="color: #0c76ad;">{dede:field name='typename'/}</a></div>Your location:
+{dede:field name='position' runphp='yes'}
+$b = array("主页");
+$c = array("HOME");
+@me=str_replace($b,$c,@me);
+{/dede:field}
+  	    </div>
+    <div class="content">
+      <div class="news_xaingxi">{dede:field.title/}</div>
+      <div class="news_author">By:&nbsp;&nbsp;{dede:field.writer /}&nbsp;&nbsp;&nbsp;&nbsp;{dede:field name='pubdate' function='strftime("%b %d, %Y",@me)'/}
+
+</div>
+<div style="padding: 0px 30px 50px 30px;border-bottom: 1px solid #d5d5d5;">
+{dede:sql sql='Select body from dede_addonarticle where aid=~aid~'}    
+[field:body/]  
+{/dede:sql}
+</div>
+      <div class="fanye">
+        <li>{dede:prenext get='pre' function='str_replace("上一篇","Previous Post",@me)'/}</li>
+        <li>{dede:prenext get='next' function='str_replace("下一篇","Next Post",@me)'/}</li>
+      </div>
+    </div>
+  </div>
+</div>
+{dede:include filename="en_footer.htm"/}
+</body>
+</html>

@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="/skin/leftmenu/css/sdmenu.css" />
+<script type="text/javascript" src="/skin/leftmenu/js/sdmenu.js"></script>
+<script type="text/javascript">
+	var myMenu;
+	window.onload = function() {
+		myMenu = new SDMenu("my_menu");
+		myMenu.init();
+	};
+</script>
+
+<div class="main_left">
+	<div class="leftitem">
+		<div class="tit">
+			<p style="padding-top: 20px;width: 150px;font-size: 20px;padding-left: 6px;color: #ffffff;">{dede:field.typeid function="GetTopTypename(@me)"/}</p>
+		</div>
+		<div id="my_menu" class="sdmenu">
+			<div>
+				<span>{dede:field.typeid function="gettoptype(@me,name)"/}</span>
+				<ul>
+						{dede:channel type='son' noself='yes'}
+						<li>
+							<a href="[field:typeurl/]">[field:typename/]</a>
+						</li>
+						{/dede:channel}
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+		<div class="left_a">
+			<p style="padding-top: 25px;font-size: 20px;"><a href="/en/CONTACT_US/" style="color: #ffffff;">CONTACT US</a></p>
+		</div>
+</div>

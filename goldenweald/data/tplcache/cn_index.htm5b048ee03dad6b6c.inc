@@ -1,0 +1,48 @@
+<?php
+$z[0]=Array("global","",254,280);
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",321,348);
+$z[1][4]['name']="cfg_keywords";
+$z[2]=Array("global","",388,418);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("global","",996,1024);
+$z[3][4]['name']="cfg_mobileurl";
+$z[4]=Array("global","",1503,1531);
+$z[4][4]['name']="cfg_mobileurl";
+$z[5]=Array("include","",1679,1714);
+$z[5][4]['filename']="head.htm";
+$z[6]=Array("type","\r\n  	<p>\r\n  	<a href=\"[field:typelink/]\"  title=\"[field:typename/]\"><img src=\"/skin/images/rc_01.jpg\" width=\"249\" height=\"65\" style=\"padding-right: 80px;\" /></a>\r\n  	</p>\r\n  	",1763,1970);
+$z[6][4]['typeid']="1";
+$z[7]=Array("arclist","\r\n        <li> <a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:litpic/]\"  alt=\"[field:title/]\" title=\"[field:title/]\" width=\"255\" height=\"255\"/></a>\r\n          <p><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></p>\r\n        </li>\r\n        ",2025,2346);
+$z[7][4]['typeid']="1";
+$z[7][4]['row']="8";
+$z[8]=Array("sql","[field:content function='cn_substr(html2text(@me),700)'/]",2458,2586);
+$z[8][4]['sql']="Select content from dede_arctype where id=6";
+$z[9]=Array("type","[field:typelink /]",2635,2685);
+$z[9][4]['typeid']="6";
+$z[10]=Array("type","<a href=\"[field:typelink/]\"  title=\"[field:typename/]\"><img src=\"/skin/images/rc_10.jpg\" width=\"133\" height=\"34\" alt=\"[field:typename/]\" /></a>",2793,2968);
+$z[10][4]['typeid']="5";
+$z[11]=Array("type","<a href=\"[field:typelink/]\"  title=\"[field:typename/]\"><img src=\"/skin/images/rc_19.png\" width=\"308\" height=\"56\" alt=\"[field:typename/]\" /></a>",3154,3329);
+$z[11][4]['typeid']="3";
+$z[12]=Array("arclist","\r\n    <li>\r\n      <div class=\"khjz_m cssimg\"><a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:litpic/]\"  alt=\"[field:title/]\" title=\"[field:title/]\" width=\"191\" height=\"145\"/></a></div>\r\n      <div class=\"khjz_r\">\r\n        <div class=\"jz_rt\">\r\n          <p><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></p>\r\n          <span>[field:pubdate function=\"MyDate('Y-m-d',@me)\"/]</span></div>\r\n        <div class=\"jz_rp\">[field:description function=\"cn_substr(@me,160)\"/]....</div>\r\n        <div class=\"jz_rb\"><a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"/skin/images/rc_24.jpg\" width=\"70\" height=\"16\" alt=\"\" /></a></div>\r\n      </div>\r\n    </li>\r\n    ",3349,4104);
+$z[12][4]['row']="4";
+$z[12][4]['typeid']="3";
+$z[12][4]['titlelen']="60";
+$z[13]=Array("type","<a href=\"[field:typelink/]\"  title=\"[field:typename/]\"><img src=\"/skin/images/video.png\" alt=\"\" /></a>",4204,4338);
+$z[13][4]['typeid']="2";
+$z[14]=Array("arclist","\r\n      <li> <a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:litpic/]\"  alt=\"[field:title/]\" title=\"[field:title/]\" width=\"376\" height=\"219\"/></a>\r\n        <p><a href=\"[field:arcurl/]\" title=\"[field:title/]\">[field:title/]</a></p>\r\n      </li>\r\n      ",4401,4708);
+$z[14][4]['typeid']="2";
+$z[15]=Array("global","",4806,4827);
+$z[15][4]['name']="cfg_dh";
+$z[16]=Array("global","",4850,4871);
+$z[16][4]['name']="cfg_sj";
+$z[17]=Array("global","",4893,4923);
+$z[17][4]['name']="cfg_shoujianren";
+$z[18]=Array("global","",4984,5005);
+$z[18][4]['name']="cfg_dz";
+$z[19]=Array("arclist","\r\n      <li><a href=\"[field:arcurl/]\" title=\"[field:title/]\"><img src=\"[field:litpic/]\"  alt=\"[field:title/]\" title=\"[field:title/]\" width=\"180\" height=\"70\"/></a></li>\r\n      ",6256,6470);
+$z[19][4]['typeid']="15";
+$z[20]=Array("include","",6501,6538);
+$z[20][4]['filename']="footer.htm";
+
+?>
